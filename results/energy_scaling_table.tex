@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\centering
+\caption{Energy-per-token comparison: photonic softmax accelerator vs.\ GPU baselines across Transformer model scales.}
+\label{tab:energy_scaling}
+\small
+\begin{tabular}{l r r r r r r r}
+\hline
+\textbf{Model} & \textbf{$d_\text{model}$} & \textbf{MACs/token} & \textbf{Photonic (10\,fJ)} & \textbf{Photonic (50\,fJ)} & \textbf{H100} & \textbf{B200} & \textbf{Adv.\ (H100)} \\
+ & & & (\si{\micro\joule}) & (\si{\micro\joule}) & (\si{\micro\joule}) & (\si{\micro\joule}) & \\
+\hline
+  BERT-base & 768 & 87M & 3.23 & 6.72 & 61.98 & 38.41 & 9.2--19.2$\times$ \\
+  GPT-2 & 768 & 104M & 19.91 & 24.06 & 73.70 & 45.68 & 3.1--3.7$\times$ \\
+  GPT-2 Medium & 1024 & 352M & 53.85 & 67.95 & 250.15 & 155.02 & 3.7--4.6$\times$ \\
+  GPT-2 Large & 1280 & 802M & 102.39 & 134.48 & 569.53 & 352.95 & 4.2--5.6$\times$ \\
+  GPT-3 {\scriptsize(approx)} & 4096 & 7.0G & 606.66 & 885.84 & 4955.32 & 3070.90 & 5.6--8.2$\times$ \\
+  Llama-2 7B & 4096 & 6.1G & 1134.81 & 1379.09 & 4335.90 & 2687.04 & 3.1--3.8$\times$ \\
+\hline
+\end{tabular}
+\end{table*}

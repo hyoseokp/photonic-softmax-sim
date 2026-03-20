@@ -1,0 +1,146 @@
+[
+  {
+    "model": "BERT-base",
+    "d_model": 768,
+    "L": 12,
+    "h": 12,
+    "d_k": 64,
+    "d_ff": 3072,
+    "K": 128,
+    "total_macs": 87293952,
+    "energy_photonic_10fJ_uJ": 3.2322355199999997,
+    "energy_photonic_50fJ_uJ": 6.723993600000001,
+    "energy_h100_uJ": 61.978705919999996,
+    "energy_b200_uJ": 38.40933888,
+    "advantage_h100_range": [
+      9.21754385964912,
+      19.175182481751825
+    ],
+    "advantage_b200_range": [
+      5.712280701754385,
+      11.883211678832117
+    ],
+    "mrr_softmax_total": 221184,
+    "mrr_weight_bank_per_head": 49152
+  },
+  {
+    "model": "GPT-2",
+    "d_model": 768,
+    "L": 12,
+    "h": 12,
+    "d_k": 64,
+    "d_ff": 3072,
+    "K": 1024,
+    "total_macs": 103809024,
+    "energy_photonic_10fJ_uJ": 19.91245824,
+    "energy_photonic_50fJ_uJ": 24.0648192,
+    "energy_h100_uJ": 73.70440703999998,
+    "energy_b200_uJ": 45.67597056,
+    "advantage_h100_range": [
+      3.062745098039215,
+      3.7014218009478665
+    ],
+    "advantage_b200_range": [
+      1.8980392156862746,
+      2.293838862559242
+    ],
+    "mrr_softmax_total": 1769472,
+    "mrr_weight_bank_per_head": 49152
+  },
+  {
+    "model": "GPT-2 Medium",
+    "d_model": 1024,
+    "L": 24,
+    "h": 16,
+    "d_k": 64,
+    "d_ff": 4096,
+    "K": 1024,
+    "total_macs": 352321536,
+    "energy_photonic_10fJ_uJ": 53.85486336,
+    "energy_photonic_50fJ_uJ": 67.9477248,
+    "energy_h100_uJ": 250.14829056,
+    "energy_b200_uJ": 155.02147584,
+    "advantage_h100_range": [
+      3.6814814814814816,
+      4.644859813084111
+    ],
+    "advantage_b200_range": [
+      2.2814814814814817,
+      2.878504672897196
+    ],
+    "mrr_softmax_total": 4718592,
+    "mrr_weight_bank_per_head": 65536
+  },
+  {
+    "model": "GPT-2 Large",
+    "d_model": 1280,
+    "L": 36,
+    "h": 20,
+    "d_k": 64,
+    "d_ff": 5120,
+    "K": 1024,
+    "total_macs": 802160640,
+    "energy_photonic_10fJ_uJ": 102.39344639999999,
+    "energy_photonic_50fJ_uJ": 134.479872,
+    "energy_h100_uJ": 569.5340544,
+    "energy_b200_uJ": 352.9506816,
+    "advantage_h100_range": [
+      4.235087719298245,
+      5.56221198156682
+    ],
+    "advantage_b200_range": [
+      2.624561403508772,
+      3.447004608294931
+    ],
+    "mrr_softmax_total": 8847360,
+    "mrr_weight_bank_per_head": 81920
+  },
+  {
+    "model": "GPT-3 (approx)",
+    "d_model": 4096,
+    "L": 32,
+    "h": 32,
+    "d_k": 128,
+    "d_ff": 16384,
+    "K": 2048,
+    "total_macs": 6979321856,
+    "energy_photonic_10fJ_uJ": 606.66413056,
+    "energy_photonic_50fJ_uJ": 885.8370048,
+    "energy_h100_uJ": 4955.31851776,
+    "energy_b200_uJ": 3070.9016166399997,
+    "advantage_h100_range": [
+      5.593939393939394,
+      8.168141592920353
+    ],
+    "advantage_b200_range": [
+      3.4666666666666663,
+      5.061946902654867
+    ],
+    "mrr_softmax_total": 25165824,
+    "mrr_weight_bank_per_head": 524288
+  },
+  {
+    "model": "Llama-2 7B",
+    "d_model": 4096,
+    "L": 32,
+    "h": 32,
+    "d_k": 128,
+    "d_ff": 11008,
+    "K": 4096,
+    "total_macs": 6106906624,
+    "energy_photonic_10fJ_uJ": 1134.81089024,
+    "energy_photonic_50fJ_uJ": 1379.0871551999999,
+    "energy_h100_uJ": 4335.9037030399995,
+    "energy_b200_uJ": 2687.0389145599997,
+    "advantage_h100_range": [
+      3.144038929440389,
+      3.820816085156712
+    ],
+    "advantage_b200_range": [
+      1.948418491484185,
+      2.3678296865759907
+    ],
+    "mrr_softmax_total": 50331648,
+    "mrr_weight_bank_per_head": 524288
+  }
+]
